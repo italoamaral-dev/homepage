@@ -1,102 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Declares the document type as HTML5 and sets the language to English -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" conteudo="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8"> <!-- Defines character encoding as UTF-8 for proper text rendering -->
+  <meta name="viewport" conteudo="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on mobile devices -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | News homepage</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> <!-- Favicon for browser tabs -->
+  <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+  <title>Frontend Mentor | News homepage</title> <!-- Page title displayed in the browser tab -->
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> <!-- Inline CSS for attribution text (likely for challenge credits) -->
 </head>
-<body>
 
-  <div class="container-principal">
-    <div class="conteúdo-principal">
-      <div class="barra-de-cima">
-        <img src="./assets/images/logo.svg" alt="News Homepage Logo" class="logo">
-        <div class="barra-de-cima-links">
+<body>
+  <div class="container-principal"> <!-- Main wrapper that centers all content -->
+    <div class="conteúdo-principal"> <!-- Main content container -->
+
+      <div class="barra-de-cima"> <!-- Top navigation bar -->
+        <img src="./assets/images/logo.svg" alt="News Homepage Logo" class="logo"> <!-- Website logo -->
+        <div class="barra-de-cima-links"> <!-- Navigation links container -->
           <a href="none">Home</a>
           <a href="none">New</a>
           <a href="none">Popular</a>
           <a href="none">Trending</a>
           <a href="none">Categories</a>
-        </div>
-      </div>
+        </div> <!-- /Navigation links -->
+      </div> <!-- /Top navigation bar -->
 
+      <div class="container-home"> <!-- Main home content container -->
 
-      <div class="container-home">
-        <div class="conteudo-esquerdo">
-          <img src="./assets//images/image-web-3-desktop.jpg" alt="">
-          <div class="manchete-conteudo">
-            <div class="manchete">
+        <div class="conteudo-esquerdo"> <!-- Left section (main article and image) -->
+          <img src="./assets//images/image-web-3-desktop.jpg" alt=""> <!-- Main featured image -->
+
+          <div class="manchete-conteudo"> <!-- Headline section -->
+            <div class="manchete"> <!-- Headline title -->
               <h1>The Bright Future of Web 3.0?</h1>
             </div>
-            <div class="conteudo">
+            <div class="conteudo"> <!-- Headline description and CTA -->
               <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
               <button>
                 <span>Read more</span>
-              </button>
-            </div>
-          </div>
-          </div>
+              </button> <!-- Call-to-action button -->
+            </div> <!-- /Headline description and CTA -->
+          </div> <!-- /Headline section -->
+        </div> <!-- /Left section -->
 
-
-        <div class="container-direito">
+        <div class="container-direito"> <!-- Right section (sidebar with news) -->
           <h1>New</h1>
           <h2>Hydrogen VS Electric Cars</h2>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          <span class="linha-horizontal"></span>
+          <span class="linha-horizontal"></span> <!-- Divider line -->
+
           <h2>The Downsides of AI Artistry</h2>
           <p>What are the possible adverse effects of on-demand AI image generation?</p>
-          <span class="linha-horizontal"></span>
+          <span class="linha-horizontal"></span> <!-- Divider line -->
+
           <h2>Is VC Funding Drying Up?</h2>
           <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </div>
-        </div>
+        </div> <!-- /Right section -->
+      </div> <!-- /Main home content -->
 
+      <div class="cards"> <!-- Bottom cards section (highlighted articles) -->
 
-        <div class="cards">
-          <div class="card1">
-            <div class="img-card">
-              <img src="./assets/images/image-retro-pcs.jpg" alt="">
-            </div>
-            <div class="conteudo">
-              <h1>01</h1>
-              <h2>Reviving Retro PCs</h2>
-              <p>What happens when old PCs are given modern upgrades?</p>
-            </div>
+        <div class="card1"> <!-- Card 1 -->
+          <div class="img-card">
+            <img src="./assets/images/image-retro-pcs.jpg" alt=""> <!-- Card image -->
           </div>
-
-
-          <div class="card2">
-            <div class="img-card">
-              <img src="./assets/images/image-top-laptops.jpg" alt="">
-            </div>
-            <div class="conteudo">
-              <h1>02</h1>
-              <h2>Top 10 laptops of 2022</h2>
-              <p>Our best picks for various needs and budgets.</p>
-            </div>
+          <div class="conteudo"> <!-- Card text -->
+            <h1>01</h1>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
           </div>
+        </div> <!-- /Card 1 -->
 
+        <div class="card2"> <!-- Card 2 -->
+          <div class="img-card">
+            <img src="./assets/images/image-top-laptops.jpg" alt=""> <!-- Card image -->
+          </div>
+          <div class="conteudo">
+            <h1>02</h1>
+            <h2>Top 10 laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div> <!-- /Card 2 -->
 
-          <div class="card3">
-            <div class="img-card">
-              <img src="./assets/images/image-gaming-growth.jpg" alt="">
-            </div>
-            <div class="conteudo">
-              <h1>03</h1>
-              <h2>The Growth of Gaming</h2>
-              <p>How the pandemic has sparked fresh opportunities.</p>
-            </div>
-          </div>   
-      </div>
-    </div>
-  </div>
+        <div class="card3"> <!-- Card 3 -->
+          <div class="img-card">
+            <img src="./assets/images/image-gaming-growth.jpg" alt=""> <!-- Card image -->
+          </div>
+          <div class="conteudo">
+            <h1>03</h1>
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div> <!-- /Card 3 -->
+
+      </div> <!-- /Bottom cards section -->
+
+    </div> <!-- /Main content container -->
+  </div> <!-- /Main wrapper -->
 </body>
 </html>
