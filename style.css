@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); /* Importing Inter font from Google Fonts */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-}
+} /* Global reset: sets box-sizing, removes default margin/padding, and applies global font */
 
 p {
     font-size: 15px;
-}
+} /* Base paragraph font size */
 
 a {
     text-decoration: none;
-}
+} /* Removes underline from links */
 
 .container-principal {
     width: 100%;
@@ -21,87 +21,88 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} /* Main container: centers all content both vertically and horizontally */
 
-.conteudo-principal {
-    width: 75%;
-    height: 80%;
+.conteúdo-principal {
+    width: 80%;
+    height: 85%;
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    padding: 20px;
     margin: 50px;
-}
+} /* Main content wrapper: column layout with spacing */
 
-.container-home{
+.container-home {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 60%;
     margin-bottom: 50px;
-}
+} /* Home section: splits left and right sections with space between */
 
-.container-esquerdo{
+.conteudo-esquerdo {
     width: 70%;
     height: 100%;
-    display: flex;
     margin-right: 3%;
+    display: flex;
     flex-direction: column;
-}
+} /* Left section: takes 70% of width, arranged in a column */
 
-.container-esquerdo img{
+.conteudo-esquerdo img {
     width: 100%;
     height: 55%;
-    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 25px;
-}
+} /* Left section main image: responsive with rounded corners */
 
-.barra-de-cima{
+.barra-de-cima {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-}
+} /* Top navigation bar: spaced between logo and links */
 
-.barra-de-cima  .barra-de-cima-links{
+.barra-de-cima .barra-de-cima-links {
     display: flex;
     align-items: center;
-}
-.barra-de-cima  .barra-de-cima-links a{
+} /* Navigation links container: horizontally aligned */
+
+.barra-de-cima .barra-de-cima-links a {
     margin-left: 85px;
     color: hsl(236, 13%, 42%);
-}
-.manchete-conteudo{
+} /* Navigation links: spaced and styled with gray tone */
+
+.manchete-conteudo {
     height: 100%;
     display: flex;
-}
+} /* Headline section: horizontal layout */
 
-.manchete-conteudo .manchete{
+.manchete-conteudo .manchete {
     width: 100%;
     height: auto;
     display: flex;
     margin-right: 50px;
-}
+} /* Headline text container: flexible with right spacing */
 
-.manchete-conteudo .manchete h1{
+.manchete-conteudo .manchete h1 {
     font-weight: 800;
     font-size: 60px;
-}
+} /* Main headline title: large and bold */
 
-.machete-conteudo .conteudo{
+.machete-conteudo .conteudo {
     width: 100%;
-}
+} /* Headline secondary content container */
 
-.manchete-conteudo .conteudo p{
+.manchete-conteudo .conteudo p {
     font-size: 20px;
     color: hsl(236, 13%, 42%);
     margin-top: 20px;
     margin-bottom: 60px;
-}
+} /* Headline paragraph: medium size with spacing */
 
-.conteudo-principal .conteudo button{
+.conteúdo-principal .conteudo button {
     width: 50%;
     height: 50px;
-    border:none;
+    border: none;
     background-color: hsl(5, 85%, 63%);
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -109,84 +110,82 @@ a {
     font-weight: 600;
     cursor: pointer;
     font-size: 20px;
-}
+} /* Call-to-action button: bold, uppercase, and interactive */
 
-.home-conteudo .container-direito{
+.container-direito {
     width: 32%;
     height: 100%;
     background-color: hsl(240, 10%, 16%);
     display: flex;
     flex-direction: column;
     padding: 30px;
-}
+} /* Right section (sidebar): dark background with vertical layout */
 
-.home-conteudo .container-direito *{
-    background-color: transparent
-}
+.container-direito * {
+    background-color: transparent;
+} /* Resets child elements' background to transparent */
 
-.home-conteudo .container-direito h1{
+.container-direito h1 {
     margin-bottom: 40px;
     font-size: 40px;
     color: hsl(35, 77%, 62%);
-}
+} /* Sidebar title: highlighted in orange tone */
 
-.home-conteudo .container-direito h2{
+.container-direito h2 {
     margin-bottom: 10px;
     font-size: 30px;
     color: white;
-}
+} /* Sidebar headings: white and slightly smaller */
 
-.home-conteudo .container-direito p{
+.container-direito p {
     color: white;
     margin-bottom: 20px;
     font-weight: 200;
+} /* Sidebar paragraph: light text for readability */
 
-}
-
-.home-conteudo .container-direito span{
+.container-direito span {
     width: 100%;
     height: 1px;
     background-color: white;
     margin-bottom: 20px;
-}
+} /* Divider line: thin white horizontal bar */
 
-.cards{
-    display: greed;
+.cards {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     margin-bottom: 50px;
-
-}
+} /* Cards section: 3-column grid with spacing */
 
 .card1,
 .card2,
-.card3{
+.card3 {
     display: flex;
     height: 300px;
-}
+} /* Individual card containers: flex layout with fixed height */
 
-.cards .img.card{
+.cards .img.card {
     margin-right: 30px;
-}
+} /* Card image wrapper: spacing to the right */
 
-.cards .img.card img{
+.cards .img.card img {
     object-fit: cover;
     width: 100%;
     height: 110px;
-}
-.cards h1{
+} /* Card images: cropped proportionally */
+
+.cards h1 {
     color: hsl(233, 13%, 49%);
     font-size: 40px;
     margin-bottom: 20px;
-}
+} /* Card numbering: gray tone, large font */
 
-.cards h2{
+.cards h2 {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 20px;
-}
+} /* Card title: bold and medium size */
 
-.cards p{
+.cards p {
     font-size: 20px;
-
-}
+} /* Card description text: readable medium size */
